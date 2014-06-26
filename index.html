@@ -3,17 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Vanessa Merritt</title>
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- FONTS -->
 	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<!-- FAVICON -->
 	<link rel="shortcut icon" href="i/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="i/favicon.ico" type="image/x-icon">
+	<!-- VIEWPORT -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 
     Idea by Jerry Wang from The Noun Project
     Reading by Adrijan Karavdic from The Noun Project 
     Code by Eugen Belyakoff from The Noun Project-->
-  
+<!-- 
+____   ____                                              _____                      .__  __    __   
+\   \ /   /____    ____   ____   ______ ___________     /     \   __________________|__|/  |__/  |_ 
+ \   V   /\__  \  /    \_/ __ \ /  ___//  ___/\__  \   /  \ /  \_/ __ \_  __ \_  __ \  \   __\   __\
+  \     /  / __ \|   |  \  ___/ \___ \ \___ \  / __ \_/    M    \  ___/|  | \/|  | \/  ||  |  |  |  
+   \___/  (____  /___|  /\___  >____  >____  >(____  /\____|__  /\___  >__|   |__|  |__||__|  |__|  
+               \/     \/     \/     \/     \/      \/         \/     \/                             
+ -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 </head>
@@ -31,7 +42,7 @@
 	
 	<div id="home" class="home">
 		<h1>Vanessa Merritt</h1>
-		<h2>Web Developer & Information Master - Toronto, Ontario</h2>
+		<h2>Web Developer, Information Master, Toronto Ontario</h2>
 	</div>
 
 	<div id="about" class="about clearfix">
@@ -57,35 +68,33 @@
 
 		<div class="glamourshot">
 			<img src="i/glam1.jpg" alt="glamourshot">
-			<p>I design websites that marry good design and functionality. My work benefits from my understanding of how people access information.  Whether you need to revamp your current site or have no web presence at all, I can lend a hand. <a href="#contact">Call me, maybe?</a></p>
+			<p>Hi there, I'm Vanessa! I design websites that combine good design and functionality, qualities users appreciate. My work benefits from my understanding of how people consume information.  Heck, I have a degree in that stuff! Whether you need to revamp your current site or have no web presence at all, I can lend a hand. Is your company hiring developers? <a href="#contact">Call me, maybe?</a></p>
 		</div>
 
-		<!-- <div class="homelink">
-			<a href="#home">Back Home</a>
-		</div> -->
+		
 	</div>
 
 	<div id="work" class="work clearfix">
 		<h2>Work</h2>
 
-			<div class="portfolio clearfix">
-				<a href="rescue/index.html"><img src="i/rescue.png" alt="rescue"></a>
-				<h3>All Breeds Canine Rescue</h3>
-				<p>After adopting my rescue dog, I was inspired to create a fabulous new site for the organization she came from. I included a JavaScript flexslider to feature adoptable animals and fundraising events and made the site fully responsive. This was my final project for HackerYou's part time course.</p>
-			</div>
+		<div class="portfolio clearfix">
+			<a href="rescue/index.html"><img src="i/rescue.png" alt="rescue"></a>
+			<h3>All Breeds Canine Rescue</h3>
+			<p>After adopting my rescue dog, I was inspired to create a fabulous new site for the organization she came from. I included a JavaScript flexslider to feature (fictional) adoptable animals and made the site fully responsive. This was my final project for HackerYou's part time course.</p>
+		</div>
 		
-			<div class="portfolio">
-				<a href="mom/index.html"><img src="i/polaroid.png" alt="polaroid"></a>
-				<h3>Polaroid Photo Gallery</h3>
-				<p>I created this Polaroid inspired photo gallery using CSS transitions and transforms. The images are my mom's recent photography. Happy Mother's Day!</p>
-			</div>
-			
-			<div class="portfolio">
-				<a href="colour-archive/index.html"><img src="i/archive.png" alt="colourarchive"></a>
-				<h3>Colour Archive</h3>
-				<p>A friend commissioned me to make a site for her architectural rendering company. We decided on a monochromatic palette with a touch of colour on hovered items. This was achieved with JavaScript. </p>
-			</div>
-			
+		<div class="portfolio">
+			<a href="mom/index.html"><img src="i/polaroid.png" alt="polaroid"></a>
+			<h3>Polaroid Photo Gallery</h3>
+			<p>I created this Polaroid inspired photo gallery using CSS transitions and transforms. The images are my mom's recent photography.</p>
+		</div>
+
+		<div class="portfolio">
+			<a href="colour-archive/index.html"><img src="i/archive.png" alt="colourarchive"></a>
+			<h3>Colour Archive</h3>
+			<p>A friend commissioned me to make a site for her architectural rendering company. We decided on a monochromatic palette with a touch of colour on hovered items. This was achieved with jQuery and inspiration from Pantone's Color of the Year. </p>
+		</div>
+
 	</div>
 
 	<!-- <div id="blog" class="blog">
@@ -120,21 +129,21 @@
 	</footer>
 
 	<script>
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
 	</script>
-		
+
 </body>
 </html>

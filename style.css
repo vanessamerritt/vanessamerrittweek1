@@ -46,15 +46,16 @@
 /* HEADER 
 ----------*/
 		.home{
+			background: url(i/crossword.png);
 			max-width: 100%;
 			margin: 0;
 			padding: 15% 0 15% 0;
-			box-shadow: 0 3px 3px rgba(0,0,0,.25);
+			box-shadow: 0 0 3px rgba(0,0,0,.22);
 		}
 			h1{
 				font-family: 'Bitter', serif;
 				letter-spacing: 15px;
-				font-size: 55px;
+				font-size: 65px;
 				color: #e74c3c;
 				text-shadow: 3px 3px 0px #ddd; 
 				text-transform: uppercase;
@@ -70,12 +71,12 @@
 /* NAVIGATION 
 --------------*/
 	ul{
-		background: #888;
+		background: #bbb;
 		padding: 1%;
 		list-style-type: none;
 		margin-top: 0;
 		margin: 0 auto;
-		box-shadow: 0 0 1em rgba(0,0,0,.25);
+		box-shadow: 0 0 1em rgba(0,0,0,.15);
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -126,7 +127,7 @@
 			margin-bottom: 5%;
 		}
 		.aboutwidget p{
-			padding-left: 2%
+			padding: 0 5% 0 5%;
 		}
 
 		.glamourshot img{
@@ -151,11 +152,11 @@
 			color: #e74c3c;
 			font-size: 30px;
 			text-decoration: none;
-			-webkit-transition: font-size 1s;
+			-webkit-transition: font-size .5s;
 		}
 		.glamourshot a:hover{
 			color: black;
-			font-size: 35px
+			font-size: 34px
 		}
 
 /* WORK SECTION 
@@ -191,7 +192,7 @@
 
 /* BLOG SECTION
 --------------------*/
-	.blog{
+	/*.blog{
 		max-width: 100%;
 		padding: 5% 0 5% 0;
 		margin: 0;
@@ -200,7 +201,7 @@
 	.blog img{
 		max-width: 50%;
 		padding: 5%;
-	}
+	}*/
 
 
 /* CONTACT SECTION
@@ -231,17 +232,17 @@ footer{
 
 /* Portrait tablet and small desktops */
 			@media (max-width: 940px) {
-				
+				h1{
+					line-height: 55px;
+				}
+				.glamourshot img{
+					margin-top: 5%;
+				}
 			}
 			 
 			/* Landscape phone to portrait tablet */
 			@media (max-width: 767px) {
-				
-				h1{
-					line-height: 50px;
-				}
-
-
+			
 				p{
 					font-size: 22px
 				}
@@ -251,23 +252,35 @@ footer{
 					max-width: 80%;
 					margin-left: 10%;
 				}
-
-
-				}
+			}
 
 			/* Landscape phones and down */
 			@media (max-width: 480px) {
-
-				.home{
-					padding-top: 45%;
+				h1{
+					font-size: 40px;
+				}
+				
+				ul{
+					position: static;
 				}
 
 				ul li{
 					display: block;
 					padding: 1%;
 					font-size: 25px;
-					position: absoute;
+					
 				}
+				.glamourshot img{
+					float: none;
+					max-width: 80%;
+					border-radius: 5px;
+				}
+				.glamourshot p{
+					float: none;
+					max-width: 90%;
+					text-align: left;
+				}
+				
 			}
 
 </style>
